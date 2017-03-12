@@ -6,7 +6,9 @@ import Root from './containers/Root'
 import configureStore from './store/configureStore'
 import '../stylesheets/main.scss'
 
-const store = configureStore()
+
+const initailState = {}
+const store = configureStore(initailState)
 const history = syncHistoryWithStore(browserHistory, store)
 
 render(
